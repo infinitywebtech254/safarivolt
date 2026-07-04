@@ -88,7 +88,7 @@ export default function App() {
 
       {/* 4. Interactive Packages & Pricing Split */}
       <section id="packages" style={{ padding: '60px 20px', maxWidth: '1100px', margin: '0 auto' }}>
-        <h2 style={{ textAlign: 'center', marginBottom: '40px' }}>Transparent System Pricing</h2>
+        <h2 style={{ textAlign: 'center', color: colors.accentBlue, marginBottom: '40px' }}>Transparent System Pricing</h2>
         <div style={{ display: 'flex', gap: '30px', flexWrap: 'wrap', justifyContent: 'center' }}>
           
           {/* Card 1 */}
