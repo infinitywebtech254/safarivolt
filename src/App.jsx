@@ -172,38 +172,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* 6. Meta Ads Performance Testing Utility (Visible Only for debugging/demoing leads) */}
-      <section style={{ padding: '40px 20px', maxWidth: '800px', margin: '0 auto', fontSize: '13px', opacity: 0.8 }}>
-        <div style={{ padding: '20px', border: '1px dashed #3066BE', borderRadius: '5px' }}>
-          <h4 style={{ margin: '0 0 10px 0', color: colors.accentBlue }}>Meta Ads Lead QA Panel (Local Device Simulator)</h4>
-          <p style={{ margin: '0 0 15px 0' }}>When running tests on Meta ads without a real backend database, your captured leads populate safely below instantly:</p>
-          {savedLeads.length === 0 ? (
-            <p style={{ color: colors.textMuted, fontStyle: 'italic' }}>No conversions on this machine yet. Test the submit form above to watch it fire.</p>
-          ) : (
-            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
-              <thead>
-                <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.2)' }}>
-                  <th style={{ padding: '5px' }}>Name</th>
-                  <th style={{ padding: '5px' }}>Phone</th>
-                  <th style={{ padding: '5px' }}>Location</th>
-                  <th style={{ padding: '5px' }}>System</th>
-                </tr>
-              </thead>
-              <tbody>
-                {savedLeads.map((lead, idx) => (
-                  <tr key={idx} style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
-                    <td style={{ padding: '5px' }}>{lead.name}</td>
-                    <td style={{ padding: '5px' }}>{lead.phone}</td>
-                    <td style={{ padding: '5px' }}>{lead.location}</td>
-                    <td style={{ padding: '5px' }}>{lead.systemSize}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          )}
-        </div>
-      </section>
-
       {/* 7. Footer */}
       <footer style={{ backgroundColor: '#050D1A', padding: '30px 20px', textAlign: 'center', fontSize: '14px', color: colors.textMuted, borderTop: '1px solid rgba(255,255,255,0.05)' }}>
         <p>© {new Date().getFullYear()} SafariVolt Solar Solutions Kenya. All Rights Reserved.</p>
