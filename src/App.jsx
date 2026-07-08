@@ -142,7 +142,7 @@ export default function App() {
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <div>
                 <label style={{ display: 'block', fontSize: '14px', marginBottom: '8px' }}>Your Full Name *</label>
-                <input type="text" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} placeholder="e.g. John Kamau" style={{ width: '100%', padding: '12px', borderRadius: '5px', border: '1px solid rgba(255,255,255,0.2)', backgroundColor: colors.brightBlue, color: colors.white, boxSizing: 'border-box' }} required />
+                <input type="text" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} placeholder="e.g. John Mark" style={{ width: '100%', padding: '12px', borderRadius: '5px', border: '1px solid rgba(255,255,255,0.2)', backgroundColor: colors.brightBlue, color: colors.white, boxSizing: 'border-box' }} required />
               </div>
 
               <div>
